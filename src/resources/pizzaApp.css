@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 16, 2015, 9:53:33 AM
+    Author     : dggodi
+*/
+
+#orderPane{
+    -fx-background-color: white;
+}
+
+#bgPane{
+    -fx-background-color: gray; -fx-border-color: rgb(100, 100, 100); 
+    -fx-border-width: 3px;
+}
+
+#btnOrder{
+    -fx-background-color: gray; -fx-text-fill: white;
+}
+
+#btnView{
+    -fx-background-color: white; -fx-text-fill: black;
+}
+
+#lblrequired{
+    -fx-text-fill: red;
+}
+
+#btnAdd:hover{
+    -fx-background-color: silver; -fx-text-fill: black;
+}
+
+#btnPlaceOrder{
+    -fx-background-color: red; -fx-text-fill: white;
+}
+
+#btnPlaceOrder:hover{
+    -fx-background-color: brown; -fx-text-fill: white;
+}
+
+// order stage
+#orderStageGrid{
+    -fx-background-color: white; -fx-text-fill: black;
+}
+
+// confrim stage
+#btnOk{
+    -fx-background-color: gray; -fx-text-fill: white;
+}
+
+#btnCancel{
+    -fx-background-color: gray; -fx-text-fill: white;
+}
+
+#btnOK:hover{
+    -fx-background-color: silver; -fx-text-fill: black;
+}
+
+#btnCancel:hover{
+    -fx-background-color: silver; -fx-text-fill: black;
+}
+

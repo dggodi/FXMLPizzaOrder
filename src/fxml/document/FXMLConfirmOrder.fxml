@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="confirmPane" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="fxml.controller.FXMLConfirmOrderController">
+    <children>
+        <HBox id="confirmFirstRow" spacing="20" >
+           <padding><Insets top="20" right="20" bottom="20" left="30" /></padding>
+           <children>
+                <ImageView fx:id="confirmImage" pickOnBounds="true" 
+                    preserveRatio="true" visible="true"> 
+                    <image><Image url="/resources/confirm.jpg" backgroundLoading="true"/></image>
+                </ImageView>
+                <Label fx:id="lblConfirmOrder" text="" wrapText="true" /> 
+           </children> 
+        </HBox>
+        <GridPane id="confirmSecondRow" hgap="20" >
+            <padding><Insets top="0" right="20" bottom="20" left="270" /></padding>
+            <Button id="btnCancel" text="Cancel" onAction="#btnCancelOrderAction" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button id="btnOK" text="OK" onAction="#btnOKOrderAction" GridPane.columnIndex="1" GridPane.rowIndex="0"/>            
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" >
+            
+        </HBox>
+    </children>
+</VBox>

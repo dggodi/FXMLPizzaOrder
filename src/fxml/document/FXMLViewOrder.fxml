@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<StackPane id="viewPane" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="fxml.controller.FXMLViewOrderController">
+    <padding><Insets top="20" right="10" bottom="20" left="10" /></padding>
+    <children>
+        <Pane id="bgPane">
+            <padding><Insets top="20" right="10" bottom="10" left="10" /></padding>
+        </Pane>
+        <VBox id="frontPanel">
+            <padding><Insets top="0" right="25" bottom="0" left="25" /></padding>
+            <children>
+                <HBox id="paneForTabs" alignment="CENTER"> 
+                    <children>
+                        <Button id="btnOrder" text="Order Pizza" onAction="#btnOrderAction"/>
+                        <Button fx:id="btnView" text="View Order"  />   
+                    </children>
+                </HBox>
+                <GridPane id="orderStageGrid" hgap="42" minHeight="220" >
+                    <padding><Insets top="5" right="5" bottom="5" left="5" /></padding>
+                        <Text id="name-text" text="  Last name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <Text id="flavor-text" text="  Flavor" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                        <Text id="size-text" text="  Size" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                        <Text id="topping-text" text="  Topping" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+                        <Text id="cost-text" text="  Cost" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+                        
+                        <Text fx:id="txtNameView" text="" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <Text fx:id="txtFlavor" text="" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <Text fx:id="txtSize" text="" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                        <Text fx:id="txtTopping" text="" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                        <Text fx:id="txtCost" text="" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+                
+                </GridPane>  
+            </children>
+        </VBox>
+    </children>
+</StackPane>
+
